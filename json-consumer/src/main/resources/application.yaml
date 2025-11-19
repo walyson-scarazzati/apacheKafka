@@ -1,7 +1,6 @@
 server:
-  port: 8100
+  port: ${PORT:8100}
 
 spring:
-  Kafka:
-    consumer:
-      bootstrap-servers: ${BOOTSTRAP_SERVERS:localhost:29092}
+  kafka:
+    bootstrap-servers: ${KAFKA_HOST:localhost:29092}
